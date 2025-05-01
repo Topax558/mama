@@ -1,0 +1,164 @@
+/* Базовые стили для мобильных устройств */
+div.empty {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Top panel - мобильная адаптация */
+div.bx-top-panel {
+    width: 100%;
+    background-color: #A4A4A4;
+    background-image: url(public/panel_new/panel_bg.png);
+    background-repeat: repeat-x;
+    font-size: 14px !important; /* Увеличиваем размер шрифта для мобильных */
+    line-height: normal !important;
+}
+
+/* Упрощаем табличную структуру для мобильных */
+div.bx-top-panel table, 
+div.bx-top-panel td, 
+div.bx-top-panel tbody, 
+div.bx-top-panel tr {
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
+    font-size: 14px !important;
+    padding: 5px 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+/* Кнопки панели - адаптация для мобильных */
+div.bx-top-panel div.bx-pnbutton {
+    float: none;
+    display: inline-block;
+    margin: 5px 2px;
+    padding-top: 0;
+}
+
+div.bx-top-panel table.bx-pnbutton {
+    width: auto !important;
+    margin: 0 auto;
+}
+
+div.bx-top-panel table.bx-pnbutton div.bx-button-text {
+    white-space: normal; /* Разрешаем перенос текста */
+    padding: 3px !important;
+}
+
+/* Иконки - уменьшаем отступы */
+div.bx-top-panel table.bx-pnbutton div.bx-pnicon {
+    padding-left: 15px;
+    background-position: 0px 3px;
+}
+
+/* Start button - уменьшаем размер */
+div.bx-top-panel div.bx-start-button {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+/* Всплывающие подсказки - адаптируем под маленькие экраны */
+div.bx-top-panel div.panel-tooltip {
+    width: 90% !important;
+    max-width: 300px;
+    margin-top: 10px;
+    font-size: 12px !important;
+}
+
+/* Табы - адаптация для мобильных */
+div.bx-panel-tab {
+    float: none;
+    display: inline-block;
+    height: auto;
+    margin: 2px;
+}
+
+div.bx-panel-tab div.bx-panel-caption {
+    padding: 3px 5px !important;
+    font-size: 12px !important;
+}
+
+/* Формы редактирования - адаптация */
+div.bx-popup-form {
+    width: 95% !important;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+div.bx-popup-form div.bx-popup-content {
+    height: auto;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+/* Меню - адаптация для мобильных */
+td.popupmenu div.popupitem td.item {
+    white-space: normal !important;
+    padding: 5px !important;
+}
+
+/* Компоненты - адаптация */
+div.bx-component-panel {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Медиа-запросы для разных размеров экранов */
+@media only screen and (max-width: 480px) {
+    /* Дополнительные стили для очень маленьких экранов */
+    div.bx-top-panel {
+        font-size: 12px !important;
+    }
+    
+    div.bx-top-panel div.bx-pnbutton {
+        margin: 3px 1px;
+    }
+    
+    div.bx-panel-tab {
+        margin: 1px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Стили для планшетов и небольших экранов */
+    div.bx-top-panel {
+        font-size: 13px !important;
+    }
+}
+
+/* Общие улучшения для мобильных устройств */
+div.bx-top-panel a {
+    padding: 5px;
+    display: inline-block;
+}
+
+/* Убираем фиксированные ширины для мобильных */
+div.bx-popup-form,
+div.bx-component-border,
+div.bx-popup-menu {
+    width: auto !important;
+    max-width: 100%;
+}
+
+/* Улучшаем отображение форм */
+table.edit-form td.content {
+    padding: 5px !important;
+}
+
+/* Адаптация кнопок */
+div.bx-popup-form div.bx-popup-buttons {
+    padding: 5px;
+    white-space: normal;
+}
+
+/* Оптимизация для сенсорных экранов */
+a, button, input[type="button"], input[type="submit"] {
+    min-width: 44px;
+    min-height: 44px;
+    line-height: 44px;
+}
